@@ -1,0 +1,409 @@
+/* ================================== */
+/* === ESTILOS GLOBAIS E GERAIS === */
+/* ================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    background-color: #f0f2f5; 
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* ESTA É A REGRA MAIS IMPORTANTE PARA O LAYOUT */
+.container {
+    max-width: 1100px; /* Largura máxima do conteúdo */
+    margin: 0 auto;   /* Centraliza o container na tela */
+    padding: 0 15px;  /* Um respiro nas laterais para não colar na borda */
+}
+
+
+/* ================================== */
+/* === PÁGINAS DE LOGIN E CADASTRO === */
+/* ================================== */
+.login-body {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    width: 900px;
+    max-width: 95%;
+
+}
+
+.banner {
+    background-color: #101d3a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* ... (outros estilos de login/cadastro que já fizemos) ... */
+
+
+/* ================================== */
+/* ========= ESTILOS DA HOME ======== */
+/* ================================== */
+
+.main-header {
+    background-color: #101d3a;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo img {
+    height: 45px;
+    display: block;
+}
+
+/* Barra de Busca */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+}
+
+.search-bar input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.search-bar button img {
+    height: 16px;
+}
+
+/* Ações do Usuário */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    white-space: nowrap; /* Impede que "Minha conta" quebre a linha */
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #A18F63;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-actions a img {
+    height: 22px;
+}
+
+/* --- Banner de Frete --- */
+.shipping-banner {
+    background-color: #4a2f6b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- Navegação de Categorias --- */
+.category-nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.category-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.category-nav li a {
+    display: block;
+    background-color: #101d3a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px; /* Padding ajustado para caber em 1100px */
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.category-nav li a:hover {
+    background-color: #2c3a57;
+}
+
+/* --- Grade de Produtos --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card p {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    min-height: 80px;
+}
+
+.product-info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.product-info p {
+    min-height: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.product-price{
+    font-size: 22px;
+    color: #101d3a;
+    margin: 15px 0;
+}
+
+.buy-button{
+    background-color: #4a2f6b;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover{
+    background-color: #3b2555;
+}
+
+/* ================================== */
+/* === PÁGINA DE DETALHES DO PRODUTO === */
+/* ================================== */
+
+/* Navegação "Voltar" (migalha de pão) */
+.breadcrumb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Layout principal da página de detalhes */
+.product-detail-page {
+    display: flex;
+    gap: 40px; /* Espaço entre a coluna de imagem e a de detalhes */
+    padding-bottom: 50px;
+}
+
+/* Coluna da Esquerda: Galeria de Imagens */
+.product-gallery {
+    flex: 1; /* Ocupa metade do espaço */
+}
+.main-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+.gallery-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.action-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.action-btn i {
+    color: #555;
+}
+
+
+/* Coluna da Direita: Detalhes do Produto */
+.product-details {
+    flex: 1; /* Ocupa a outra metade */
+}
+.product-details h2 {
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.4;
+}
+.sold-count {
+    color: #777;
+    font-size: 14px;
+}
+.price-section {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.current-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #101d3a;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+.coupon .coupon-tag {
+    background-color: #e8deff;
+    color: #4a2f6b;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+/* Seções de Opções (Parcelas, Cor, Quantidade) */
+.installments, .color-selector, .quantity-selector {
+    margin: 25px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.installments p, .color-selector p, .quantity-selector p {
+    margin: 0;
+    width: 100px; /* Alinha os títulos */
+    color: #555;
+}
+.installments-options, .color-selector, .quantity-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.color-selector label, .installments-options label {
+    display: flex;
+    gap: 5px;
+}
+
+/* Seletor de Quantidade */
+.quantity-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.quantity-input button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+.quantity-input input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 5px 0;
+    font-size: 16px;
+    -moz-appearance: textfield; /* Remove setas no Firefox */
+}
+.quantity-input input::-webkit-outer-spin-button,
+.quantity-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Remove setas no Chrome/Safari */
+  margin: 0;
+}
+.stock-info {
+    font-size: 13px;
+    color: #777;
+    margin-left: 15px;
+    align-self: center;
+}
+
+/* Botões de Compra */
+.purchase-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+.purchase-buttons button {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #101d3a;
+}
+.btn-add-to-cart {
+    background-color: #e8deff;
+    color: #101d3a;
+}
+.btn-buy-now {
+    background-color: #101d3a;
+    color: #ffffff;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Joias & Euphoria Acessórios</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="home.html" class="header-logo"><img src="assets/images/logo.png" alt="Logo"></a>
+        </div>
+    </header>
+    <div class="shipping-banner"><p>FRETE GRÁTIS A partir de R$ 299</p></div>
+
+    <div class="container breadcrumb">
+        <a href="home.html"><i class="fas fa-arrow-left"></i> INÍCIO</a>
+    </div>
+
+    <main class="container product-detail-page">
+        <section class="product-gallery">
+            <div class="main-image">
+                <img src="images/produto6.jpg" alt="Bolsa com design clássico" id="mainProductImage">
+            </div>
+            <div class="gallery-actions">
+                <button class="action-btn"><i class="fas fa-share-alt"></i> Compartilhar</button>
+                <button class="action-btn"><i class="fas fa-heart"></i> Favoritar</button>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <h2>Bolsa com design clássico e sofisticado, possui alças de mão, fecho com fivela e acabamento elegante</h2>
+            <p class="sold-count">1,8 mil vendido(s)</p>
+            
+            <div class="price-section">
+                <span class="current-price">R$ 200,00</span>
+                <span class="original-price">R$ 250,00</span>
+            </div>
+            
+            <div class="coupon">
+                <span>Cupons de loja</span>
+                <span class="coupon-tag">R$ 5 OFF</span>
+            </div>
+
+            <div class="installments">
+                <p>Cartão de Crédito</p>
+                <div class="installments-options">
+                    <label><input type="radio" name="installments" checked> 2x R$ 100,00</label>
+                    <label><input type="radio" name="installments"> 3x R$ 66,67</label>
+                    <label><input type="radio" name="installments"> 5x R$ 40,00</label>
+                </div>
+            </div>
+
+            <div class="color-selector">
+                <p>Cor:</p>
+                <label><input type="radio" name="color"> Marrom Escuro</label>
+                <label><input type="radio" name="color" checked> Marrom Claro</label>
+                <label><input type="radio" name="color"> Bege</label>
+            </div>
+
+            <div class="quantity-selector">
+                <p>Quantidade:</p>
+                <div class="quantity-input">
+                    <button id="decrease-qty">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button id="increase-qty">+</button>
+                </div>
+                <span class="stock-info">13 peças disponíveis</span>
+            </div>
+
+            <div class="purchase-buttons">
+                <button class="btn-add-to-cart"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                <button class="btn-buy-now">Comprar Agora</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

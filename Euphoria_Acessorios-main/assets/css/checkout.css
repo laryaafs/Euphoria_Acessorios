@@ -1,0 +1,22 @@
+/* Estilos para a página de checkout */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body { margin: 0; font-family: 'Lato', sans-serif; background-color: #f4f7f6; }
+.page-container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.checkout-header { text-align: center; margin-bottom: 30px; }
+.logo { height: 50px; }
+.checkout-layout { display: flex; gap: 30px; }
+.checkout-info { flex: 2; }
+.order-summary { flex: 1; background-color: #fff; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0; height: fit-content; }
+h2, h3 { color: #333; }
+input[type="text"], input[type="email"] { width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+.card-extra-info { display: flex; gap: 10px; }
+.payment-options { display: flex; flex-direction: column; gap: 10px; background-color: #f9f9f9; padding: 15px; border-radius: 5px; }
+.payment-details { display: none; margin-top: 15px; }
+.payment-details.active { display: block; }
+.qr-code { max-width: 180px; margin: 10px auto; display: block; }
+.order-summary h3 { margin-top: 0; }
+.summary-item { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 14px; }
+.summary-item img { width: 50px; height: 50px; border-radius: 5px; }
+.summary-row { display: flex; justify-content: space-between; margin: 10px 0; }
+.total-row { font-weight: bold; font-size: 18px; }
+.btn-pay { width: 100%; background-color: #101d3a; color: #fff; border: none; padding: 15px; font-size: 18px; font-weight: bold; border-radius: 8px; cursor: pointer; margin-top: 20px; }

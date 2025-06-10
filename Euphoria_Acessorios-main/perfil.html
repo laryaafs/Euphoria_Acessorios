@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Euphoria</title>
+    <link rel="stylesheet" href="assets/css/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-content">
+            <a href="home.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo Joias & Euphoria Acessórios">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <div class="breadcrumb">
+            <a href="home.html"><i class="fas fa-arrow-left"></i> INÍCIO</a>
+        </div>
+
+        <main class="profile-page">
+            <div class="profile-header">
+                <img src="assets/images/Larissa.png" alt="Foto do Perfil" class="profile-picture">
+                <h2>Larissa Silva</h2>
+                <p>larissasilva.afs@gmail.com.br</p>
+            </div>
+
+            <section class="profile-section">
+                <h3><i class="fas fa-user-edit"></i> Informações Pessoais</h3>
+                <div class="info-row">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" value="Larissa Silveira" readonly>
+                </div>
+                <div class="info-row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" value="larissasilva.afs@gmail.com.br" readonly>
+                </div>
+                <button id="edit-info-btn" class="btn-secondary">Editar</button>
+            </section>
+
+            <section class="profile-section">
+                <h3><i class="fas fa-shield-alt"></i> Segurança</h3>
+                <div class="info-row">
+                    <label>Senha</label>
+                    <input type="password" value="*********" readonly>
+                </div>
+                <button class="btn-secondary">Alterar Senha</button>
+            </section>
+            
+            <section class="profile-section actions-section">
+                 <button id="logout-btn" class="btn-primary">Sair (Logout)</button>
+                 <button id="delete-account-btn" class="btn-danger">Excluir Conta</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

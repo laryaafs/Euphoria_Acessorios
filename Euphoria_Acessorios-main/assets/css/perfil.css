@@ -1,0 +1,38 @@
+/* ===================================== */
+/* === CSS PARA A PÁGINA DE PERFIL === */
+/* ===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body { margin: 0; font-family: 'Lato', sans-serif; background-color: #f4f7f6; color: #333; }
+
+/* --- Cabeçalho e Navegação --- */
+.page-header { background-color: #101d3a; padding: 15px 0; }
+.header-content { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+.logo img { height: 45px; }
+.page-container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+.breadcrumb { padding: 25px 0; font-weight: bold; }
+.breadcrumb a { text-decoration: none; color: #333; display: flex; align-items: center; gap: 10px; font-size: 16px; }
+
+/* --- Layout Principal do Perfil --- */
+.profile-page { padding-bottom: 50px; }
+.profile-header { text-align: center; margin-bottom: 30px; }
+.profile-picture { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.profile-header h2 { margin: 10px 0 5px 0; }
+.profile-header p { margin: 0; color: #777; }
+
+/* --- Seções do Perfil --- */
+.profile-section { background-color: #fff; border: 1px solid #e9e9e9; border-radius: 8px; padding: 25px; margin-bottom: 20px; }
+.profile-section h3 { margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: #101d3a; }
+.info-row { display: flex; flex-direction: column; margin-bottom: 15px; }
+.info-row label { font-size: 14px; color: #555; margin-bottom: 5px; }
+.info-row input { padding: 12px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; font-size: 16px; }
+.info-row input:read-only { background-color: #e9ecef; cursor: not-allowed; border-color: #e0e0e0; }
+
+/* --- Botões --- */
+.btn-secondary { background-color: #f0f0f0; border: 1px solid #ccc; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.btn-secondary:hover { background-color: #e0e0e0; }
+.actions-section { background: none; border: none; padding: 0; }
+.btn-primary { background-color: #101d3a; color: #fff; width: 100%; border: none; padding: 15px; border-radius: 5px; font-size: 16px; cursor: pointer; margin-bottom: 10px; }
+.btn-danger { background: none; border: 1px solid #c82333; color: #c82333; width: 100%; padding: 15px; border-radius: 5px; font-size: 16px; cursor: pointer; }
+.btn-danger:hover { background-color: #c82333; color: #fff; }
